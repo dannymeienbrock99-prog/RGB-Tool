@@ -1,4 +1,4 @@
-# PRISM RGB Studio 1.4
+# PRISM RGB Studio 1.5
 
 Lokale RGB-Steuerzentrale für Windows 10/11 x64 (Intel/AMD), ohne OpenRGB. PRISM liest jeweils den PC aus, auf dem es installiert ist; Komponentenmodelle werden nicht fest vorgegeben. Die Programm- und .NET-Laufzeit ist mitgeliefert. PRISM öffnet seine Oberfläche in einem eigenen Windows-Fenster mit Microsoft Edge WebView2.
 
@@ -32,6 +32,14 @@ Die Übersicht liest außerdem den lokalen Razer-Chroma-Status, sofern die Schni
 **Stream Deck und Elgato-Geräte sind in der Windows-Geräteliste sichtbar, aber von der RGB-Steuerung ausgeschlossen.** PRISM startet und verbindet OpenRGB nicht. Es beendet auch keine fremden Node-Prozesse, etwa Stream-Deck-Erweiterungen.
 
 Eine erkannte PC-Komponente hat nicht automatisch steuerbare RGB-LEDs. Mainboard-, RAM- und Controller-Unterstützung hängt von der vorhandenen Schnittstelle und dem Modell ab. Geräte anderer Hersteller können über iCUE erscheinen, sofern iCUE sie bereitstellt, etwa ASUS-Mainboard- oder GPU-Beleuchtung. Für Lian Li gibt es keine eigenständige Anbindung. Auch weitere Hersteller sind nur dann steuerbar, wenn Windows LampArray oder iCUE die betreffende Beleuchtung tatsächlich bereitstellt; ihre Namensanzeige allein reicht dafür nicht. Passive Lüfter und LED-Streifen ohne eigene Gerätekennung werden über ihren Controller oder Mainboard-Anschluss zusammengefasst. Windows kann ihre individuellen Modellnamen nicht auslesen. Controller-Kanäle werden nur bei eindeutig zuordenbaren, vollständig validierten LED-Daten als getrennte Zonen angeboten. Die Windows-Liste enthält auch logische Gerätefunktionen und Systemeinträge; ihre Anzahl ist keine Anzahl physischer Geräte.
+
+## Mainboard-Bild in der PC-Vorschau
+
+Bei einem aus Windows erkannten MSI-/Micro-Star-Mainboard erscheint die MSI-Ansicht, bei ASUS/ASUSTeK die ASUS-Ansicht. Verwendet werden ausschließlich die Mainboarddaten, keine Marken von Grafikkarten oder USB-Geräten. Unter dem Bild steht der tatsächlich gemeldete Mainboardname. Die Bilder verwenden die bereitgestellten MSI- und ASUS-Mainboarddesigns als Symbolbild; sie sind keine Modellbestätigung. Andere, fehlende oder widersprüchliche Mainboarddaten behalten die allgemeine Vorschau. „PC erneut erkennen“ aktualisiert auch die Bildauswahl. Ein fehlendes Herstellerbild fällt auf die allgemeine Darstellung zurück.
+
+Lüfter, RAM, Grafikkarte und die bisherige RGB-Überlagerung behalten ihre Position. Diese Änderung erweitert keine Hardware-Schnittstelle oder RGB-Kompatibilität.
+
+Prüfstand 1.5: 68 automatisierte Tests bestanden. Die Bildauswahl wurde in 11 simulierten Zuständen auf Desktop (1365×1000) und Mobil (390×844) geprüft: MSI, ASUS, Aktualisierung, fehlende Daten, unbekannte Hersteller, ausschließlich MSI/ASUS-Grafikkarten, absichtlich fehlendes Herstellerbild, erneutes Laden nach Herstellerwechsel und lange Modellnamen. Die 19 Vorschauprüfungen sind bestanden; reale Hardwarefarben wurden dabei nicht verändert.
 
 ## Licht einstellen
 

@@ -1,6 +1,8 @@
-PRISM RGB Studio 1.4
+PRISM RGB Studio 1.5
 
 RGB-Steuerzentrale für Windows 10/11 x64 (Intel/AMD), ohne OpenRGB.
+
+Die PC-Vorschau zeigt bei einem erkannten MSI-/Micro-Star-Mainboard die MSI-Ansicht, bei ASUS/ASUSTeK die ASUS-Ansicht. Darunter steht der gemeldete Mainboardname. Die Bilder sind Hersteller-Symbolbilder, keine Bestätigung eines bestimmten Modells. Andere Hersteller behalten die allgemeine Ansicht. „PC erneut erkennen“ aktualisiert auch das Bild. Die RGB-Unterstützung bleibt unverändert.
 
 Der Assistent installiert PRISM für dein Windows-Benutzerkonto. Die benötigte Programm- und .NET-Laufzeit wird mitgeliefert. Das Startmenü und auf Wunsch der Desktop erhalten eine Verknüpfung.
 

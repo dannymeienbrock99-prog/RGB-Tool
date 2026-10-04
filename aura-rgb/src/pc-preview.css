@@ -23,6 +23,27 @@
   mix-blend-mode: screen;
 }
 
+.pc-preview__board-caption {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 10px 16px;
+  border-top: 1px solid #24303c;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.pc-preview__board-label {
+  color: #d7e1ed;
+  font-weight: 500;
+}
+
+.pc-preview__board-note {
+  font-size: 10px;
+}
+
 .pc-preview__target {
   position: absolute;
   padding: 0;

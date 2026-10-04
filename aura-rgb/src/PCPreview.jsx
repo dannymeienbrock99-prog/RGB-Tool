@@ -1,5 +1,6 @@
-import { useEffect, useId, useRef } from 'react';
+import { useEffect, useId, useRef, useState } from 'react';
 import { createEffectSampler } from './effect-color.js';
+import { getMotherboardPreview } from './motherboard-preview.js';
 import './pc-preview.css';
 
 const COMPONENTS = [
@@ -99,10 +100,16 @@ function drawLighting(canvas, config, types, time) {
   context.shadowBlur = 0;
 }
 
-export function PCPreview({ config = {}, selectedTypes = [], running = true, onSelectType }) {
+export function PCPreview({ config = {}, selectedTypes = [], running = true, onSelectType, system }) {
   const canvasRef = useRef(null);
   const timeRef = useRef(0);
   const effectRef = useRef(config.effect);
+  const [failedImage, setFailedImage] = useState(null);
+  const motherboard = getMotherboardPreview(system);
+  const chosenImage = motherboard.image;
+  const usesFallback = failedImage === chosenImage;
+  const imageSource = usesFallback ? '/pc-base.png' : chosenImage;
+  const previewLabel = motherboard.label && !usesFallback ? `${motherboard.label} Mainboard-Vorschau` : 'Mainboard-Vorschau';
   useEffect(() => {
     if (effectRef.current !== config.effect) {
       timeRef.current = 0;
@@ -144,9 +151,12 @@ export function PCPreview({ config = {}, selectedTypes = [], running = true, onS
     };
   }, [config, selectedTypes, running]);
 
-  return (
+  return <>
     <div className="pc-preview" aria-label="Interaktive Vorschau der PC-Beleuchtung">
-      <img className="pc-preview__base" src="/pc-base.png" alt="PC mit drei Lüftern, RAM, Mainboard, Grafikkarte und LED-Streifen" draggable="false" />
+      <img key={imageSource} className="pc-preview__base" src={imageSource}
+        alt={`${previewLabel}: PC mit drei Lüftern, RAM, Grafikkarte und LED-Streifen`}
+        onLoad={() => { if (!usesFallback && failedImage) setFailedImage(null); }}
+        onError={() => { if (imageSource !== '/pc-base.png') setFailedImage(chosenImage); }} draggable="false" />
       <canvas ref={canvasRef} className="pc-preview__lighting" aria-hidden="true" />
       {onSelectType && COMPONENTS.map(({ type, label, x, y, width, height }) => (
         <button type="button" key={type} className="pc-preview__target"
@@ -155,7 +165,12 @@ export function PCPreview({ config = {}, selectedTypes = [], running = true, onS
           aria-pressed={selectedTypes.includes(type)} title={label} onClick={() => onSelectType(type)} />
       ))}
     </div>
-  );
+    <div className="pc-preview__board-caption">
+      <span className="pc-preview__board-label">{previewLabel}</span>
+      {motherboard.modelName ? <span className="pc-preview__board-model">Erkannt: {motherboard.modelName}</span> : null}
+      <span className="pc-preview__board-note">Symbolbild · Mainboard-Design kann je nach Modell abweichen.</span>
+    </div>
+  </>;
 }
 
 function Fan({ x, y, size = 50, gradient }) {

@@ -136,7 +136,8 @@ try {
     $zipNames = @($zip.Entries | ForEach-Object { $_.FullName.Replace('\', '/') })
     foreach ($entry in @(
         'PRISM-RGB/PRISM-starten.cmd', 'PRISM-RGB/runtime/node.exe',
-        'PRISM-RGB/dist/pc-base.png', 'PRISM-RGB/native/bin/PRISM-Lighting.exe',
+        'PRISM-RGB/dist/pc-base.png', 'PRISM-RGB/dist/pc-msi.png', 'PRISM-RGB/dist/pc-asus.png',
+        'PRISM-RGB/native/bin/PRISM-Lighting.exe',
         'PRISM-RGB/native/bin/WebView2Loader.dll'
     )) { if ($entry -notin $zipNames) { throw "Portable archive is missing: $entry" } }
     if ($zipNames | Where-Object { $_ -match '/(node_modules|\.git|\.build|work)/' }) {
@@ -153,6 +154,7 @@ $releaseNotes = @"
 PRISM RGB Studio $shortVersion fuer Windows 10/11 x64.
 
 - 14 RGB-Effekte, acht Szenen und frei einstellbare Farben, Helligkeit und passende Effektregler.
+- MSI- und ASUS-Mainboarddesign in der PC-Vorschau, automatisch aus den Windows-Mainboarddaten gewaehlt. Der erkannte Modellname steht unter dem Hersteller-Symbolbild.
 - Automatische Windows-Geraeteliste mit Namen und Herstelleruebersicht.
 - RGB-Steuerung ueber kompatible Windows-LampArray-Geraete und die optionale offizielle Corsair-iCUE-Schnittstelle.
 - Stream Deck und Elgato werden nur angezeigt und sind von der RGB-Steuerung ausgeschlossen.
