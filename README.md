@@ -1,6 +1,6 @@
 # PRISM RGB Studio
 
-RGB-Steuerzentrale für Windows 10/11 x64 (Intel/AMD), Version **1.5.0**.
+RGB-Steuerzentrale für Windows 10/11 x64 (Intel/AMD), Version **1.5.1**.
 
 PRISM erkennt die von Windows gemeldeten PC-Komponenten und Gerätenamen des jeweiligen PCs. Die Oberfläche bietet **14 RGB-Effekte**, acht Szenen, bis zu acht Farben, Helligkeit, Geschwindigkeit, Richtung und passende Feineinstellungen. Profile lassen sich speichern und importieren/exportieren.
 
@@ -8,7 +8,7 @@ PRISM erkennt die von Windows gemeldeten PC-Komponenten und Gerätenamen des jew
 
 Die fertige Windows-Version findest du unter **[Releases](https://github.com/dannymeienbrock99-prog/RGB-Tool/releases)**:
 
-- [PRISM-Setup-1.5.exe](https://github.com/dannymeienbrock99-prog/RGB-Tool/releases/download/v1.5.0/PRISM-Setup-1.5.exe): deutscher Installer, Installation für dein Benutzerkonto ohne Administratorrechte.
+- [PRISM-Setup-1.5.1.exe](https://github.com/dannymeienbrock99-prog/RGB-Tool/releases/download/v1.5.1/PRISM-Setup-1.5.1.exe): deutscher Installer, Installation für dein Benutzerkonto ohne Administratorrechte.
 - `PRISM-RGB-Windows.zip`: portable Version; vollständig entpacken und `PRISM-starten.cmd` öffnen.
 - `SHA256SUMS.txt`: Prüfsummen der Downloads.
 
@@ -17,6 +17,8 @@ Eine alte PRISM-Version vor der Installation vollständig beenden. Das Setup ist
 ## Geräte und RGB
 
 Neu in 1.5: Die PC-Vorschau verwendet bei einem erkannten MSI-/Micro-Star-Mainboard das MSI-Design, bei ASUS/ASUSTeK das ASUS-Design. Andere Hersteller behalten die allgemeine Ansicht. Die Bildwahl liest ausschließlich Mainboarddaten und aktualisiert sich mit „PC erneut erkennen“. Unter dem Hersteller-Symbolbild steht der tatsächlich gemeldete Mainboardname; das Foto bestätigt kein bestimmtes Modell.
+
+Neu in 1.5.1: Die ASUS-Vorschau zeigt einen White Build mit weißem Gehäuse, weißen Lüftern, RAM, Grafikkarte, Kühlung und Kabeln. Die MSI-Vorschau bleibt unverändert. Automatische Herstellerwahl und echter Mainboardname bleiben erhalten.
 
 Die PC-Erkennung zeigt unter anderem CPU, Mainboard, RAM, Grafikkarten, Laufwerke und von Windows gemeldete USB-Geräte. Modellnamen werden aus den vorhandenen Schnittstellen gelesen, nicht für einen bestimmten PC vorgegeben.
 
@@ -55,6 +57,6 @@ Der Quellcode-Download enthält keine fertigen Windows-Laufzeiten. Verwende zum 
 
 ## Prüfung und Lizenzen
 
-Version 1.5 besteht 68 automatisierte Tests. Die Mainboard-Vorschau wurde auf Desktop und Mobil mit 11 simulierten Zuständen und 19 Prüfungen getestet, einschließlich Bildwechsel bei Aktualisierung, fehlender Bilder und neutraler Auswahl bei unbekannten Herstellern. Der Installer wurde in der vorherigen Version isoliert installiert/aktualisiert; seine Dateiregeln enthalten auch die neuen Vorschaubilder. Effektübertragung wurde mit simulierten RGB-Geräten getestet; daraus folgt keine Bestätigung der LED-Funktion für jedes Hardwaremodell.
+Prüfstand 1.5: 68 automatisierte Tests sind bestanden. Die Mainboard-Vorschau wurde auf Desktop und Mobil mit 11 simulierten Zuständen und 19 Prüfungen getestet, einschließlich Bildwechsel bei Aktualisierung, fehlender Bilder und neutraler Auswahl bei unbekannten Herstellern. Der Installer wurde in der vorherigen Version isoliert installiert/aktualisiert; seine Dateiregeln enthalten auch die neuen Vorschaubilder. Effektübertragung wurde mit simulierten RGB-Geräten getestet; daraus folgt keine Bestätigung der LED-Funktion für jedes Hardwaremodell.
 
 Lizenztexte mitgelieferter Komponenten liegen in `aura-rgb/licenses`, `aura-rgb/runtime` und `aura-rgb/native/licenses`. Für den PRISM-eigenen Quellcode wird hier keine zusätzliche Lizenz erteilt.

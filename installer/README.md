@@ -1,10 +1,12 @@
 # PRISM Windows-Installer
 
-Die fertige Datei **PRISM-Setup-1.5.exe** steht unter [GitHub Releases](https://github.com/dannymeienbrock99-prog/RGB-Tool/releases/tag/v1.5.0). Sie installiert PRISM RGB Studio 1.5.0 für das aktuelle Windows-Benutzerkonto unter `%LOCALAPPDATA%\Programs\PRISM RGB Studio`. Unterstützt wird Windows 10/11 auf x64-PCs mit Intel- oder AMD-Prozessor.
+Die fertige Datei **PRISM-Setup-1.5.1.exe** steht unter [GitHub Releases](https://github.com/dannymeienbrock99-prog/RGB-Tool/releases/tag/v1.5.1). Sie installiert PRISM RGB Studio 1.5.1 für das aktuelle Windows-Benutzerkonto unter `%LOCALAPPDATA%\Programs\PRISM RGB Studio`. Unterstützt wird Windows 10/11 auf x64-PCs mit Intel- oder AMD-Prozessor.
 
-## Mainboard-Vorschau in 1.5
+## Mainboard-Vorschau in 1.5.1
 
-Bei einem erkannten MSI-/Micro-Star-Mainboard zeigt die PC-Ansicht das MSI-Design; ASUS/ASUSTeK verwendet das ASUS-Design. Der echte Inventarname steht unter dem Symbolbild. Andere, fehlende oder widersprüchliche Mainboarddaten behalten die allgemeine Ansicht. Die Bildwahl wird mit „PC erneut erkennen“ aktualisiert und verändert keine RGB-Kompatibilität. 68 automatisierte Tests und 19 Vorschauprüfungen mit 11 simulierten Zuständen auf Desktop und Mobil sind bestanden. Die neue Bilddateien liegen in `dist` und werden durch die bestehenden Installer-Regeln mitgeliefert.
+Bei einem erkannten MSI-/Micro-Star-Mainboard zeigt die PC-Ansicht das MSI-Design; ASUS/ASUSTeK verwendet das ASUS-Design. Neu in 1.5.1 ist die ASUS-Ansicht als White Build mit weißem Gehäuse, weißen Lüftern, RAM, Grafikkarte, Kühlung und Kabeln. Die MSI-Ansicht bleibt unverändert. Der echte Inventarname steht weiterhin unter dem Symbolbild; das Bild bestätigt kein bestimmtes Modell. Andere, fehlende oder widersprüchliche Mainboarddaten behalten die allgemeine Ansicht. Die Bildwahl wird mit „PC erneut erkennen“ aktualisiert und verändert keine RGB-Kompatibilität. Die Bilddateien liegen in `dist` und werden durch die bestehenden Installer-Regeln mitgeliefert.
+
+Prüfstand 1.5: 68 automatisierte Tests und 19 Vorschauprüfungen mit 11 simulierten Zuständen auf Desktop und Mobil sind bestanden.
 
 Der deutsche Assistent erstellt einen Startmenü-Eintrag, eine Deinstallations-Verknüpfung und auf Wunsch eine Desktop-Verknüpfung. PRISM lässt sich anschließend über Windows-Einstellungen → Apps entfernen. Die Programm- und .NET-Laufzeit sind enthalten. OpenRGB wird nicht benötigt. Tatsächliche LED-Steuerung wird unverändert über Windows LampArray oder das vorhandene Corsair-iCUE bereitgestellt, einschließlich Beleuchtung anderer Hersteller, die iCUE meldet, etwa ASUS. Die optionale Corsair-SDK-Datei lädt jeder Anwender nach Zustimmung zu den Herstellerbedingungen selbst direkt vom offiziellen Download; sie wird in diesem Installer nicht weiterverteilt. Das native Programmfenster benötigt Microsoft Edge WebView2.
 

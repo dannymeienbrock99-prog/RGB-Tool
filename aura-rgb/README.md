@@ -1,4 +1,4 @@
-# PRISM RGB Studio 1.5
+# PRISM RGB Studio 1.5.1
 
 Lokale RGB-Steuerzentrale für Windows 10/11 x64 (Intel/AMD), ohne OpenRGB. PRISM liest jeweils den PC aus, auf dem es installiert ist; Komponentenmodelle werden nicht fest vorgegeben. Die Programm- und .NET-Laufzeit ist mitgeliefert. PRISM öffnet seine Oberfläche in einem eigenen Windows-Fenster mit Microsoft Edge WebView2.
 
@@ -37,11 +37,15 @@ Eine erkannte PC-Komponente hat nicht automatisch steuerbare RGB-LEDs. Mainboard
 
 Bei einem aus Windows erkannten MSI-/Micro-Star-Mainboard erscheint die MSI-Ansicht, bei ASUS/ASUSTeK die ASUS-Ansicht. Verwendet werden ausschließlich die Mainboarddaten, keine Marken von Grafikkarten oder USB-Geräten. Unter dem Bild steht der tatsächlich gemeldete Mainboardname. Die Bilder verwenden die bereitgestellten MSI- und ASUS-Mainboarddesigns als Symbolbild; sie sind keine Modellbestätigung. Andere, fehlende oder widersprüchliche Mainboarddaten behalten die allgemeine Vorschau. „PC erneut erkennen“ aktualisiert auch die Bildauswahl. Ein fehlendes Herstellerbild fällt auf die allgemeine Darstellung zurück.
 
+Neu in 1.5.1: Die ASUS-Ansicht zeigt einen White Build mit weißem Gehäuse, weißen Lüftern, RAM, Grafikkarte, Kühlung und Kabeln. Die MSI-Ansicht bleibt unverändert. Herstellerwahl und Anzeige des echten Mainboardnamens funktionieren weiterhin wie bisher.
+
 Lüfter, RAM, Grafikkarte und die bisherige RGB-Überlagerung behalten ihre Position. Diese Änderung erweitert keine Hardware-Schnittstelle oder RGB-Kompatibilität.
 
 Prüfstand 1.5: 68 automatisierte Tests bestanden. Die Bildauswahl wurde in 11 simulierten Zuständen auf Desktop (1365×1000) und Mobil (390×844) geprüft: MSI, ASUS, Aktualisierung, fehlende Daten, unbekannte Hersteller, ausschließlich MSI/ASUS-Grafikkarten, absichtlich fehlendes Herstellerbild, erneutes Laden nach Herstellerwechsel und lange Modellnamen. Die 19 Vorschauprüfungen sind bestanden; reale Hardwarefarben wurden dabei nicht verändert.
 
 ## Licht einstellen
+
+Prüfstand 1.5.1: Der ASUS White Build wurde auf Desktop und Mobilgerät in 21 Vorschauprüfungen getestet. Herstellerwechsel, Modellname, fehlende Bilder, bestehende RGB-Positionen und 0 % Helligkeit funktionieren. Das MSI-Bild bleibt unverändert. Die Prüfung verwendet simulierte PC-Daten und verändert keine Hardwarefarben.
 
 14 Effekte: Statisch, Regenbogen, Atmen, Welle, Farbverlauf, Funkeln, Farbwechsel, Komet, Lauflicht, Scanner, Wasserwelle, Feuer, Nordlicht und Farbstreifen. Bis zu acht Farben und Helligkeit einstellen; bei bewegten Effekten zusätzlich Geschwindigkeit, bei passenden Effekten Richtung und Größe beziehungsweise Dichte. Die Feineinstellungen heißen passend zum Effekt etwa Schweiflänge, Strahlbreite oder Wellendichte. Statisch verwendet die erste gewählte Farbe; Regenbogen verwendet das Spektrum. Farbwechsel und Farbstreifen wirken mit mindestens zwei Farben. Feuer verwendet deine gewählte Palette; die Szene Kaminfeuer liefert warme Farben. Acht Szenen sind enthalten, darunter Kaminfeuer, Polarlicht, Neon-Komet und Neon-Lauflicht. Einzelne Geräte oder LED-Zonen wählen. **Auf Geräte anwenden** überträgt Einstellungen erst nach deinem Klick. Beim Programmstart erfolgt automatisch eine reine RGB-Gerätesuche, ohne Farben zu verändern oder eine Hersteller-Anbindung herunterzuladen. Eine bereits bestehende Sitzung und laufende Effekte bleiben beim erneuten Öffnen erhalten. PC-Erkennung und RGB-Gerätesuche ändern keine LED-Farben. Neue Geräte lassen sich mit einer erneuten Suche einlesen.
 

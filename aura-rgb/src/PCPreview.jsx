@@ -109,7 +109,9 @@ export function PCPreview({ config = {}, selectedTypes = [], running = true, onS
   const chosenImage = motherboard.image;
   const usesFallback = failedImage === chosenImage;
   const imageSource = usesFallback ? '/pc-base.png' : chosenImage;
-  const previewLabel = motherboard.label && !usesFallback ? `${motherboard.label} Mainboard-Vorschau` : 'Mainboard-Vorschau';
+  const previewLabel = motherboard.brand === 'asus' && !usesFallback
+    ? 'ASUS White Build · Mainboard-Vorschau'
+    : motherboard.label && !usesFallback ? `${motherboard.label} Mainboard-Vorschau` : 'Mainboard-Vorschau';
   useEffect(() => {
     if (effectRef.current !== config.effect) {
       timeRef.current = 0;

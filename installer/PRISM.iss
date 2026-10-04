@@ -2,7 +2,7 @@
 ; Build with Inno Setup 6.7.3: ISCC.exe PRISM.iss
 ; /DTEST_INSTALL builds the same payload with workspace-only shortcuts and no registration.
 #define AppName "PRISM RGB Studio"
-#define AppVersion "1.5.0"
+#define AppVersion "1.5.1"
 #define PayloadRoot "..\aura-rgb"
 
 [Setup]

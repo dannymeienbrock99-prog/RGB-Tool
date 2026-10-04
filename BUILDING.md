@@ -14,7 +14,7 @@ Im Stammverzeichnis des Repositorys:
 
 Das Skript prüft die Versionen, lädt feste Microsoft-SDK- und Inno-Setup-Versionen mit SHA256-Prüfung, installiert die npm-Abhängigkeiten aus dem Lockfile, führt die automatisierten Tests aus und baut Oberfläche und native Windows-Komponente. Danach erstellt es den deutschen Installer und eine portable ZIP-Version mit Node- und .NET-Laufzeit.
 
-Die Ergebnisse liegen in `artifacts/`: `PRISM-Setup-1.5.exe`, `PRISM-RGB-Windows.zip` und `SHA256SUMS.txt`. Build-Abhängigkeiten liegen im ignorierten Verzeichnis `.build/`. Das Skript installiert PRISM nicht und verändert keine RGB-Farben.
+Die Ergebnisse liegen in `artifacts/`: `PRISM-Setup-1.5.1.exe`, `PRISM-RGB-Windows.zip` und `SHA256SUMS.txt`. Build-Abhängigkeiten liegen im ignorierten Verzeichnis `.build/`. Das Skript installiert PRISM nicht und verändert keine RGB-Farben.
 
 Die optionale Corsair-SDK-DLL wird nicht gebündelt. PRISM lädt sie bei der Einrichtung nach Zustimmung zur Herstellerlizenz separat herunter.
 

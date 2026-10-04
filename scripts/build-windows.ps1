@@ -155,6 +155,7 @@ PRISM RGB Studio $shortVersion fuer Windows 10/11 x64.
 
 - 14 RGB-Effekte, acht Szenen und frei einstellbare Farben, Helligkeit und passende Effektregler.
 - MSI- und ASUS-Mainboarddesign in der PC-Vorschau, automatisch aus den Windows-Mainboarddaten gewaehlt. Der erkannte Modellname steht unter dem Hersteller-Symbolbild.
+- ASUS White Build mit weissem Gehaeuse, Lueftern, RAM, Grafikkarte, Kuehlung und Kabeln; die MSI-Vorschau bleibt unveraendert.
 - Automatische Windows-Geraeteliste mit Namen und Herstelleruebersicht.
 - RGB-Steuerung ueber kompatible Windows-LampArray-Geraete und die optionale offizielle Corsair-iCUE-Schnittstelle.
 - Stream Deck und Elgato werden nur angezeigt und sind von der RGB-Steuerung ausgeschlossen.
