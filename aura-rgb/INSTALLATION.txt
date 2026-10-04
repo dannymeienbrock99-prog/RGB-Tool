@@ -1,0 +1,29 @@
+PRISM RGB Studio 1.4
+
+RGB-Steuerzentrale für Windows 10/11 x64 (Intel/AMD), ohne OpenRGB.
+
+Der Assistent installiert PRISM für dein Windows-Benutzerkonto. Die benötigte Programm- und .NET-Laufzeit wird mitgeliefert. Das Startmenü und auf Wunsch der Desktop erhalten eine Verknüpfung.
+
+Eine alte PRISM-Version vor der Installation beenden. Anschließend PRISM RGB Studio öffnen. Auf der Startseite werden CPU, Mainboard, RAM, Grafikkarten, Laufwerke und Bildschirmnamen automatisch über Windows ausgelesen. Die neue Windows-Geräteliste zeigt auch vorhandene USB-Controller und Zubehör mit Namen, Suche und Kategorien. Einzelne Abfragefehler verwerfen die übrigen Ergebnisse nicht. PRISM liest immer den PC aus, auf dem es läuft; es sind keine Komponentenmodelle vorgegeben. Auch unbekannte OEM-Hersteller bleiben sichtbar, wenn Windows ihren Namen meldet.
+
+Die Herstellerübersicht zeigt erkannte Marken, unbekannte OEM-Namen und den Stand ihrer Anbindung. Sie nennt die aktuell steuerbaren RGB-Ziele ausdrücklich. Andere Einträge derselben Marke sind dadurch nicht automatisch steuerbar. Erkannte Geräte und tatsächlich steuerbare Beleuchtung sind getrennte Ergebnisse.
+
+Für RGB-Beleuchtung gibt es weiterhin zwei Anbindungen:
+
+Corsair: Vorhandenes iCUE starten und dort SDK-Steuerung erlauben. Unter „RGB-Anbindung öffnen“ die Corsair-Lizenzbedingungen lesen und der einmaligen Einrichtung zustimmen. PRISM lädt die offizielle Corsair-Schnittstelle direkt herunter. Danach RGB-Geräte suchen. Die Hersteller-DLL ist in diesem Installer nicht enthalten. Auch von iCUE bereitgestellte Beleuchtung anderer Hersteller, etwa ASUS, kann über diese Anbindung erscheinen.
+
+Windows: Unterstützt werden kompatible Geräte für „Dynamische Beleuchtung“ (HID LampArray). Dafür muss das native PRISM-Fenster im Vordergrund bleiben. Es benötigt Microsoft Edge WebView2, das auf vielen Windows-PCs bereits vorhanden ist.
+
+Razer Chroma: PRISM liest ausschließlich den lokalen SDK-Status per GET, sofern erreichbar. Dabei wird keine Chroma-Sitzung eröffnet und keine LED-Farbe übertragen. Diese Statusanzeige ist keine eigenständige Razer-RGB-Anbindung.
+
+Stream Deck und Elgato erscheinen nur zur Anzeige in der Windows-Geräteliste und sind von der RGB-Steuerung ausgeschlossen. OpenRGB wird nicht benötigt und nicht gestartet. PC-Erkennung und RGB-Gerätesuche ändern keine Farben. Beleuchtung wird erst über „Auf Geräte anwenden“ übertragen.
+
+Unter Beleuchtung stehen jetzt 14 Effekte und acht Szenen zur Verfügung. Neu sind Farbwechsel, Komet, Lauflicht, Scanner, Wasserwelle, Feuer, Nordlicht und Farbstreifen. Farben und Helligkeit einstellen und die passenden Feineinstellungen öffnen, etwa Schweiflänge oder Strahlbreite. Effektwahl ändert zunächst die Vorschau; zum Übertragen Auf Geräte anwenden wählen. Die neuen Effekte lassen sich in Profilen speichern. Bisherige Profile bleiben verwendbar.
+
+Beim Start erfolgt automatisch eine reine RGB-Gerätesuche. Erkennung und Farben ändern sind getrennte Vorgänge. Passive Lüfter und LED-Streifen ohne eigene Kennung erscheinen gegebenenfalls nur über ihren Controller. Die Erkennung einer PC-Komponente bedeutet nicht automatisch RGB-Unterstützung. Für Lian Li besteht keine eigenständige Anbindung. Weitere Hersteller sind nur steuerbar, soweit Windows LampArray oder iCUE ihr konkretes Gerät bereitstellt. Alle Komponenten und Modelle gleichzeitig zu steuern kann diese Version nicht garantieren.
+
+Zum Beenden das PRISM-Steuerfenster schließen oder im Serverfenster Strg+C drücken. Profile der bisherigen Browser-Version vor dem Wechsel exportieren und im neuen Fenster importieren.
+
+Deinstallieren über Windows-Einstellungen → Apps oder „PRISM deinstallieren“ im Startmenü. Eigene Dateien, iCUE und Profile bleiben erhalten. Weitere Hinweise stehen im installierten README.md.
+
+Prüfstand 1.4: 59 automatisierte Tests sind bestanden. Alle 14 Effekte, Regler, acht Szenen und alte sowie neue Profile wurden in der Oberfläche mit simulierten RGB-Geräten geprüft. Desktop und schmale Ansicht sind ohne Browserfehler oder horizontalen Überlauf nutzbar. Dabei wurden keine realen LED-Farben verändert.

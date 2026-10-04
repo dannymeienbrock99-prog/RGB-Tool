@@ -1,0 +1,16 @@
+node_modules/
+dist/
+work/
+.cache/
+.env
+.env.*
+!.env.example
+*.log
+*.pdb
+**/obj/
+**/bin/
+aura-rgb/runtime/*.exe
+PRISM-Setup*.exe
+PRISM-RGB-Windows.zip
+SHA256SUMS.txt
+.DS_Store
