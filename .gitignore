@@ -1,6 +1,8 @@
 node_modules/
 dist/
 work/
+.build/
+artifacts/
 .cache/
 .env
 .env.*

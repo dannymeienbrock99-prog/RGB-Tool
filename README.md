@@ -35,6 +35,7 @@ Die Vorschau verwendet dieselbe Effektberechnung wie die LED-Ausgabe. Erst **Auf
 - [Bedienungsanleitung](aura-rgb/README.md)
 - [Windows-Komponente und Schnittstellen](aura-rgb/native/README.md)
 - [Installer](installer/README.md)
+- [Vollständiger Windows-Build](BUILDING.md)
 - React-Oberfläche: `aura-rgb/src`
 - Lokaler Dienst und Hardwareerkennung: `aura-rgb/server`
 - Automatisierte Tests mit simulierten Geräten: `aura-rgb/tests`
@@ -48,7 +49,7 @@ npm run dev
 npm run build
 ```
 
-Der Quellcode-Download enthält keine fertigen Windows-Laufzeiten. Verwende zum direkten Start den Installer oder die portable Version. Hinweise zum vollständigen Windows-Build folgen im Buildskript und im Release-Workflow dieses Repositorys.
+Der Quellcode-Download enthält keine fertigen Windows-Laufzeiten. Verwende zum direkten Start den Installer oder die portable Version. Mit `scripts/build-windows.ps1` werden die nötigen Laufzeiten vorbereitet und beide Windows-Pakete gebaut. Die vollständigen Voraussetzungen stehen in [BUILDING.md](BUILDING.md).
 
 ## Prüfung und Lizenzen
 
